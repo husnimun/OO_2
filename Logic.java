@@ -1,9 +1,8 @@
-
 import java.util.*;
 
 /**
  *
- * @author husnimun
+ * @author 13513006 / Rahman Adianto, 13513022 / Husni Munaya
  */
 public class Logic extends Expression {
     public Logic(String ekspresi) {

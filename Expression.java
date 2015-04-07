@@ -1,5 +1,8 @@
 import java.util.*;
-
+/**
+ *
+ * @author 13513006 / Rahman Adianto
+ */
 public abstract class Expression {
     
     // abstract class
@@ -39,7 +42,9 @@ public abstract class Expression {
     private boolean isPrefix() {
         Scanner sc = new Scanner(ekspresi);
         String word_temp = sc.next();
-        
+        if (isUnaryOpt(word_temp)) {
+            return false;
+        } 
         return isOperator(word_temp);
     }
     
@@ -47,7 +52,7 @@ public abstract class Expression {
         Scanner sc = new Scanner(ekspresi);
         String word_temp = sc.next();
         
-        return !isOperator(word_temp) || word_temp.equals("(");
+        return !isOperator(word_temp) || isUnaryOpt(word_temp) || word_temp.equals("(");
     }
     
     private boolean isPostfix() {

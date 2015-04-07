@@ -1,7 +1,8 @@
 import java.util.*;
+
 /**
  *
- * @author husnimun
+ * @author 13513006 / Rahman Adianto, 13513022 / Husni Munaya, 13513078 Gazandi Cahyadarma
  */
 public class Arithmetic extends Expression {
     public Arithmetic(String ekspresi) {
@@ -38,13 +39,7 @@ public class Arithmetic extends Expression {
         return (oprt.equals("*")  ||
                 oprt.equals("/")  ||
                 oprt.equals("+")  ||
-                oprt.equals("-")  ||
-                oprt.equals(">")  || 
-                oprt.equals("<")  || 
-                oprt.equals(">=") || 
-                oprt.equals("<=") || 
-                oprt.equals("=")  ||
-                oprt.equals("<>")
+                oprt.equals("-")
                 );
     }
 
